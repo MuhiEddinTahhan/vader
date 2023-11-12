@@ -1,5 +1,8 @@
 # vader
 an open-source cybersecurity tools written in python
+# Upcoming updates:
+1- add more tools.
+2- add a command line interface and a command line banner
 
 # HashCracker.py
 a program that uses python library "hashlib" to crack md5 hash code by using a word list that is given by the user to the program. the program, will encode each line of the given list and will try to compare the hash until there is a match
