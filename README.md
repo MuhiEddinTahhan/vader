@@ -2,13 +2,13 @@
 
 # vader
 an open-source cybersecurity tool written in Python.
-# Upcoming updates:
+## Upcoming updates:
 1- add more tools.  
 2- add a command line interface and a command line banner.  
 
 # HashCracker.py
 A program that uses the Python library "hashlib" to crack md5 hash code by using a word list that is given by the user to the program. The program will encode each line of the given list and will try to compare the hash until there is a match.  
-# Upcoming updates:
+## Upcoming updates:
 1- More hash libraries will be added.  
 
 # PortScanner.py
@@ -16,16 +16,16 @@ A program that scans ports using the Python library "socket". the program will t
 
 # SSHBruteForce.py
 A program that uses the "paramiko" library to perform SSH connection. After giving the IP target, username, and path to the password list by the user, the program will establish a connection and open a file that will be used to enumerate through the list. It will stop at the first successful entry and will record the password.  
-# Upcoming updates:
+## Upcoming updates:
 1- Use threads to make the enumeration faster.  
 
 # direnum.py
 A program that uses the "request" library to enumerate through directories of a given DNS, or IP target. After giving a wordlist to the program and the IP or DNS of the target, it will start enumerating the wordlist to find directories in the target. 
-# Upcoming updates:
+## Upcoming updates:
 1- Add more status codes for the if statement.  
 2- add PHP to the enumeration.  
 
 # subdomainenum.py
 The program uses the same mechanism and libraries as the direnum.py to find the subdomain of a target.  
-# Upcoming updates:
+## Upcoming updates:
 1- Add more protocols like HTTPS.  
