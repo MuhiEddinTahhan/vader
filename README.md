@@ -2,6 +2,12 @@
 
 # vader
 an open-source cybersecurity tool written in Python.
+## IMPORTANT NOTE:
+users might need to install some python libraries to run the program like "requests"  
+to install these libraries, on your terminal write:  
+  pip3 install {wanted library}  
+example:
+  pip3 install requests
 ## Upcoming updates:
 1- add more tools.  
 2- add a command line interface and a command line banner.  
