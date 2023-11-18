@@ -1,7 +1,8 @@
 from direnum import direnum_fun
 from HashCracker import hashcracker_fun 
 #import PortScanner
-#import SSHBruteForce
+import SSHBruteForce
+from SSHBruteForce import ssh_force
 #import subdomainenum
 import pyfiglet
 
@@ -56,7 +57,8 @@ while command != "exit":                                        #for loop to run
         hashcracker_fun()
     elif command == "--direnum":                                #--direnum to run direnum script
         direnum_fun()
-
+    elif command == "--sshbruteforce":                          #--sshbruteforce to run the SSHBruteForce script
+        ssh_force()
         
              
     else:                                                       #run when the command printed is not availible
