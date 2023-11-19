@@ -2,6 +2,7 @@ from direnum import direnum_fun
 from HashCracker import hashcracker_fun 
 import PortScanner
 from PortScanner import scan_port
+#import PortScanner
 import SSHBruteForce
 from SSHBruteForce import ssh_force
 #import subdomainenum
@@ -60,6 +61,7 @@ while command != "exit":                                        #for loop to run
         direnum_fun()
     elif command == "--sshbruteforce":                          #--sshbruteforce to run the SSHBruteForce script
         ssh_force()
+
     elif command == "--portscanner":                            #--portscanner command to run the portscanner script
         scan_port()
         
