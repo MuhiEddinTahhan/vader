@@ -2,22 +2,26 @@ import sys
 import requests
 
 """define the list of enumeration"""
-sub_list = open("wordlist.txt").read()
-sub_enum = sub_list.splitlines()
 
-"""create a for loop that will enumerate through the list to find the subdomains needed"""
+def subdomainenum_fun():
+    sub_list = str(input('input the wordlist location: '))      #insert the location of the wordlist
+    ip_address=str(input('insert IP address here: '))           #insert IP address
+    wordlist = open(sub_list).read()                            #read the wordlist
+    sub = wordlist.splitlines()                                 #split the values
 
-for sub in sub_enum:
-    subdomains= f"http://{sub}.{sys.argv[1]}"      #get the IP from the command line and try the list
+    #create a for loop that will enumerate through the list to find the subdomains needed
 
-    try:
-        requests.get(subdomains)                        #GET protocol for the subdomain
+    for words in sub:
+        subdomains= f"http://{words}.{ip_address}"      #get the IP from the command line and try the list
 
-    except requests.ConnectionError:                    #if there is a connection error or the subdomain doesn't work, pass
-        pass
+        try:
+            requests.get(subdomains)                        #GET protocol for the subdomain
 
-else:
-    print ("valid subdomain: ", subdomains)             #print the valid subdomains
+        except requests.ConnectionError:                    #if there is a connection error or the subdomain doesn't work, pass
+            pass
+
+    else:
+        print ("valid subdomain: ", subdomains)             #print the valid subdomains
 
 """
 to improve:

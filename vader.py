@@ -1,11 +1,10 @@
 from direnum import direnum_fun
 from HashCracker import hashcracker_fun 
-import PortScanner
 from PortScanner import scan_port
-#import PortScanner
-import SSHBruteForce
 from SSHBruteForce import ssh_force
-#import subdomainenum
+from subdomainenum import subdomainenum_fun
+from PortScanner import scan_port
+from SSHBruteForce import ssh_force
 import pyfiglet
 
 """this is the CLI for the program where user can access all the above programs"""
@@ -61,6 +60,10 @@ while command != "exit":                                        #for loop to run
         direnum_fun()
     elif command == "--sshbruteforce":                          #--sshbruteforce to run the SSHBruteForce script
         ssh_force()
+    elif command == "--portscanner":                            #--portscanner command to run the portscanner script
+        scan_port()
+    elif command == "--subdomainenum":                          #--subdomainenum command to run the subdomainenum script
+        subdomainenum_fun()
 
     elif command == "--portscanner":                            #--portscanner command to run the portscanner script
         scan_port()
