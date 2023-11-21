@@ -54,7 +54,6 @@ while command != "exit":                                        #for loop to run
         print ("Goodbye Chosen 1!")
     
     elif command == "--hashcracker":                            #--hashcracker to run hashcracker script
-        print("hash")
         hashcracker_fun()
     elif command == "--direnum":                                #--direnum to run direnum script
         direnum_fun()
@@ -65,8 +64,5 @@ while command != "exit":                                        #for loop to run
     elif command == "--subdomainenum":                          #--subdomainenum command to run the subdomainenum script
         subdomainenum_fun()
 
-    elif command == "--portscanner":                            #--portscanner command to run the portscanner script
-        scan_port()
-        
     else:                                                       #run when the command printed is not availible
         print("the command you printed is not availible, please try again")
