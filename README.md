@@ -3,7 +3,7 @@
 # vader
 an open-source cybersecurity tool written in Python.
 ## IMPORTANT NOTE:
-users might need to install some python libraries to run the program like "requests"  
+users might need to install some Python libraries to run the program: "requests", "paramiko", "hashlib", "socket"  
 to install these libraries, on your terminal write:  
   pip3 install {wanted library}  
 example:
@@ -13,7 +13,7 @@ example:
 2- add a command line interface and a command line banner.  
 
 # HashCracker.py
-A program that uses the Python library "hashlib" to crack md5 hash code by using a word list that is given by the user to the program. The program will encode each line of the given list and will try to compare the hash until there is a match.  
+A program that uses the Python library "hashlib" to crack md5 hash code by using a word list given by the user to the program. The program will encode each line of the given list and will try to compare the hash until there is a match.  
 ## Upcoming updates:
 1- More hash libraries will be added.  
 
